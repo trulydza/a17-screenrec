@@ -1,17 +1,17 @@
-# A17 Screen Recorder Enabler
+# Galaxy A Screen Recorder Enabler
 
-Módulo LSPosed que habilita la grabadora de pantalla de Samsung en el Galaxy A17, donde el tile **Grabador de pantalla** viene oculto.
+Módulo LSPosed que habilita la grabadora de pantalla de Samsung en la serie Galaxy A, donde el tile **Grabador de pantalla** viene oculto.
 
 ## Requisitos
 
-- Galaxy A17 5G (SM-A176B) con One UI 9 / Android 17 (probado en `A176BXXU8DZJ5`)
+- Galaxy de la serie A con One UI (probado en A17 5G, SM-A176B, One UI 9 / Android 17, `A176BXXU8DZJ5`)
 - Root + LSPosed (probado con Vector / JingMatrix LSPosed v2.2)
 - Scope: `com.android.systemui` y `com.samsung.android.app.smartcapture`
 - La app **Grabador de pantalla** de Samsung debe estar instalada (viene con One UI)
 
 ## Cómo funciona
 
-Samsung elimina `SEC_FLOATING_FEATURE_FRAMEWORK_SUPPORT_SCREEN_RECORDER` en este modelo, así que `TileFeatureChecker` oculta `RecordScreenTile`. El módulo fuerza ese flag a `true` en `SemFloatingFeature`, con lo que el tile vuelve a aparecer.
+Samsung elimina `SEC_FLOATING_FEATURE_FRAMEWORK_SUPPORT_SCREEN_RECORDER` en estos modelos, así que `TileFeatureChecker` oculta `RecordScreenTile`. El módulo fuerza ese flag a `true` en `SemFloatingFeature`, con lo que el tile vuelve a aparecer.
 
 ## Instalación
 
